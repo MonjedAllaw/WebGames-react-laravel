@@ -6,6 +6,7 @@ import Login from './views/auth/Login';
 import Signup from './views/auth/Signup';
 import Home from './views/Home';
 import NotFound from './views/NotFound';
+import About from './views/About';
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element:<Navigate to='/home'/>
+            },
+            {
+                path:'/about',
+                element:<About/>
             }
             
         ]

@@ -1,5 +1,7 @@
 import { Navigate, Outlet } from "react-router-dom"
 import { useStateContext } from "../contexts/ContextProvider"
+import '../assets/global.css'
+import Navbar from "./navbar/Navbar";
 
 export default function DefaultLayout (){
     const{user,token}=useStateContext();
@@ -7,9 +9,14 @@ export default function DefaultLayout (){
     if(!token){
         return <Navigate to="/login"/>
     }
+    
     return(
-        <div>default
-            <Outlet/>
+        <div id="defaultLayout">
+            <Navbar isLoggedIn={true}/>
+            <main>
+                <Outlet/>
+            </main>
+            
         </div>
 
     )
