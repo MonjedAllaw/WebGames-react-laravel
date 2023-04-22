@@ -45,6 +45,13 @@ export default function Login(){
                     <div className='input_group'>
                         <input  ref={passwordRef} type="password" autoFocus placeholder="password"/>
                     </div>
+                    
+                    {message &&
+            <div className="alert">
+              <p>{message}</p>
+            </div>
+          }
+
                     <button  type="submit">continue</button>
 
                     <a href="#" className="form_link">forgot your password</a> 

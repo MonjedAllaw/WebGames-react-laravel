@@ -9,6 +9,7 @@ use App\Models\User;
 use http\Env\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use \UserController;
 
 class AuthController extends Controller
 {
@@ -48,4 +49,6 @@ class AuthController extends Controller
         $user->currentAccessToken()->delete();
         return response('', 204);
     }
+
+  
 }

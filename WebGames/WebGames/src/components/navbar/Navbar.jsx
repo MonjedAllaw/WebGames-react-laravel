@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import './navbar.css'
 
-const Navbar = ({ isLoggedIn }) => {
+const Navbar = ({ isLoggedIn, logoutAction,userName }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -47,6 +47,12 @@ const Navbar = ({ isLoggedIn }) => {
             <li>
               <Link to="/about">About</Link>
             </li>
+            <li>
+            <div>
+            <a onClick={logoutAction} className="btn-logout" href="#">Logout</a>
+          </div>
+            </li>
+
           </ul>
         ) : (
           <ul>
