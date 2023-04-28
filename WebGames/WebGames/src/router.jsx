@@ -8,6 +8,9 @@ import Home from './views/Home';
 import NotFound from './views/NotFound';
 import About from './views/About';
 
+import XO from './views/xo/XO.jsx'
+import Matching from './views/matching/Matching';
+import RPS from './views/rps/RPS';
 
 const router = createBrowserRouter([
     {
@@ -25,6 +28,18 @@ const router = createBrowserRouter([
             {
                 path:'/about',
                 element:<About/>
+            },
+            {
+                path:'/xo',
+                element:<XO/>
+            },
+            {
+                path:'/rps',
+                element:<RPS/>
+            },
+            {
+                path:'/matching',
+                element:<Matching/>
             }
             
         ]

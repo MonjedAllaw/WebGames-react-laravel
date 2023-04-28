@@ -1,0 +1,59 @@
+.matching_body{
+
+    overflow: auto;
+    background:var(--main-color);
+    height:100vh;
+
+    margin:20px;
+    padding:0.5rem;
+    border-radius: 20px;
+
+
+}
+.action_message,
+.found,
+.flips {
+	font-size: 30px;
+	color: white;
+	text-align:center;
+    margin-bottom:2rem;
+
+
+}
+
+#grid{
+
+
+    width:30%;
+    margin: auto;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: white;
+    justify-items: center;
+    align-items:space-between;
+
+
+   }
+
+#grid > img{
+    width:100%;
+}
+
+@media screen and (max-width: 540px) {
+     #grid{
+    width:80%;
+    }
+
+
+}
+
+
+@media screen and (min-width: 540px) and (max-width: 900px) {
+     #grid{
+    width:60%;
+    }
+}
+

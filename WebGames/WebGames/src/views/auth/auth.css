@@ -1,3 +1,4 @@
+
 .auth_body{
    
     height: 100vh;
@@ -27,7 +28,7 @@ form{
 }
 
 
-input{
+.form_input{
     display: block;
     width: 100%;
     padding: 0.75rem;
@@ -40,7 +41,8 @@ input{
 
 }
 
-button{
+.auth_button{
+    
     width: 100%;
     padding: 1rem 2rem;
     color: #ffffff;
@@ -51,10 +53,11 @@ button{
     outline: none;
     cursor: pointer;
     background: #4ba0e3;
+    box-sizing: border-box;
    
 }
 
-button:hover{
+.auth_button:hover{
     background:#326d9c;
 
 }
@@ -69,4 +72,7 @@ button:hover{
 
 .form_link:hover{
     text-decoration: underline;
+}
+.alert{
+ color: rgb(181, 0, 0);
 }

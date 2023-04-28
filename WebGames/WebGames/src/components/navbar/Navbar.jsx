@@ -6,14 +6,23 @@ const Navbar = ({ isLoggedIn, logoutAction,userName }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
+    
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+  const closeMenu = () => {
+    if(isMobileMenuOpen)
+      setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const [isDropDown, setDropDown] = useState(false);
 
   const handleToggle = () => {
     setDropDown(!isDropDown);
+    if(isMobileMenuOpen)
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+   
   };
+  
 
   return (
     <nav className="navbar">
@@ -28,24 +37,27 @@ const Navbar = ({ isLoggedIn, logoutAction,userName }) => {
         {isLoggedIn ? (
           <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/home"  onClick={closeMenu} >Home</Link>
             </li>
             <li>
-              <a href="#" onClick={handleToggle}>Games</a>
+              <a href="#" onClick={
+                ()=> {
+                  setDropDown(!isDropDown)
+              }}>Games</a>
               <ul  className={`dropdown-menu ${isDropDown ? 'dropdown-menu-show' : ''}`}>
                 <li>
-                  <Link to="/game1">Game 1</Link>
+                  <Link  onClick={handleToggle} to="/xo">tic-tac-toe</Link>
                 </li>
                 <li>
-                  <Link to="/game2">Game 2</Link>
+                  <Link onClick={handleToggle} to="/matching">Matching</Link>
                 </li>
                 <li>
-                  <Link to="/game3">Game 3</Link>
+                  <Link onClick={handleToggle} to="/rps">RPS</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link  onClick={closeMenu} to="/about">About</Link>
             </li>
             <li>
             <div>

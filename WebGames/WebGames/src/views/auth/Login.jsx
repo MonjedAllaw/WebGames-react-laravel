@@ -40,10 +40,10 @@ export default function Login(){
                 <form onSubmit={onSubmit}>
                     <h1 className='form_title'>Login</h1> 
                     <div className='input_group'>
-                        <input ref={emailRef} type="text"  autoFocus  placeholder='email@example.com'/>
+                        <input className="form_input" ref={emailRef} type="text"  autoFocus  placeholder='email@example.com'/>
                     </div>
                     <div className='input_group'>
-                        <input  ref={passwordRef} type="password" autoFocus placeholder="password"/>
+                        <input className="form_input" ref={passwordRef} type="password" autoFocus placeholder="password"/>
                     </div>
                     
                     {message &&
@@ -52,10 +52,10 @@ export default function Login(){
             </div>
           }
 
-                    <button  type="submit">continue</button>
+                    <button className="auth_button" type="submit">continue</button>
 
                     <a href="#" className="form_link">forgot your password</a> 
-                    <Link  to="/signup" className="form_link"> Don't have an account? Create account </Link>
+                   
             
                 </form>
 

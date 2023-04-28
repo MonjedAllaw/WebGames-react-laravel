@@ -44,16 +44,16 @@ export default function Signup(){
                 <form onSubmit={onSubmit}>
                     <h1 className='form_title'>Create Account</h1> 
                     <div className='input_group'>
-                        <input ref={nameRef} type="text"  autoFocus  placeholder='full name'/>
+                        <input className="form_input" ref={nameRef} type="text"  autoFocus  placeholder='full name'/>
                     </div>
                     <div className='input_group'>
-                        <input ref={emailRef} type="email"  autoFocus  placeholder='email@example.com'/>
+                        <input className="form_input" ref={emailRef} type="email"  autoFocus  placeholder='email@example.com'/>
                     </div>
                     <div className='input_group'>
-                        <input ref={passwordRef} type="password" autoFocus placeholder="password"/>
+                        <input className="form_input" ref={passwordRef} type="password" autoFocus placeholder="password"/>
                     </div>
                     <div className='input_group'>
-                        <input ref={passwordConfirmationRef} type="password" autoFocus placeholder="confirm password"/>
+                        <input className="form_input" ref={passwordConfirmationRef} type="password" autoFocus placeholder="confirm password"/>
                     </div>
 
                     {errors &&
@@ -63,7 +63,7 @@ export default function Signup(){
               ))}
             </div>
           }
-                    <button  type="submit">continue</button>
+                    <button className="auth_button" type="submit">continue</button>
 
     
                     <Link  to="/login" className="form_link"> already have an account? sign in</Link>

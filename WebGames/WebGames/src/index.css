@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family:asap, sans-serif;
+}
+body{
+    margin:0;
+    padding:0;
+    background: var(--bg-color);
+}
+
+:root {
+    --main-color:  #4ba0e3;
+    --secondary-color:#f2624f;
+    --hover-color:#326d9c;
+    --darker-color:#114c7a;
+    --bg-color:#f0f4f7;
+}
+
+/*home*/
+.home a{
+    text-decoration: none;
+    color: #252c6a;
+
+}
+.welcome{
+
+    background:var(--main-color);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 10%;
+
+}
+
+.about p{
+max-width:500px;
+
+}
+.about{
+color:white;
+ background:var(--main-color);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 10%;
+}
+#welcome-message h1{
+color:var(--darker-color);
+    font-size: 2.5em;
+    font-weight: bolder;
+     font-family: 'Ubuntu', sans-serif;
+}
+
+#welcome-message p{
+color:var(--bg-color);
+    font-size: 1.2em;
+     font-family: 'Ubuntu', sans-serif;
+}
+.choices{
+
+    margin:90px 0;
+    display:flex;
+    flex-direction:column;
+     align-items:center;
+     
+
+
+
+
+}
+.page_choice{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin:1.5rem;
+    width:80%;
+    flex-basis:100px;
+    border-radius:10px;
+    background:white;
+    display:flex;
+    align-items:center;
+    padding:1px;
+
+
+
+
+}
+.page_choice:hover{
+ box-shadow: 0 0 15px var(--main-color);
+ cursor:pointer;
+
+
+}
+
+
+@media screen and (max-width: 540px) {
+     .welcome > img{
+     width:300px;
+}
+
+}
+footer{
+
+    background:var(--main-color);
+    color: white;
+    overflow: auto;
+    padding:10px 10%;
+   
+}
+footer a{
+
+margin: 0 5px;   
+   
+}
+
