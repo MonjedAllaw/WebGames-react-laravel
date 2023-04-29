@@ -99,6 +99,11 @@ color:var(--bg-color);
 @media screen and (max-width: 540px) {
      .welcome > img{
      width:300px;
+     
+}
+.about > img{
+    width:300px;
+    
 }
 
 }

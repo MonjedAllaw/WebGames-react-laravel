@@ -7,7 +7,7 @@ import Signup from './views/auth/Signup';
 import Home from './views/Home';
 import NotFound from './views/NotFound';
 import About from './views/About';
-
+import Welcome from './views/Welcome';
 import XO from './views/xo/XO.jsx'
 import Matching from './views/matching/Matching';
 import RPS from './views/rps/RPS';
@@ -55,6 +55,10 @@ const router = createBrowserRouter([
             {
                 path:'/login',
                 element:<Login/>
+            },
+            {
+                path:'/welcome',
+                element:<Welcome/>
             },
             {
                 path:'/',

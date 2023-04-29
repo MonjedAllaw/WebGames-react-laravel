@@ -55,6 +55,7 @@ export default function Login(){
                     <button className="auth_button" type="submit">continue</button>
 
                     <a href="#" className="form_link">forgot your password</a> 
+                    <Link  to="/signup" className="form_link"> Don't have an account? Create one</Link>
                    
             
                 </form>

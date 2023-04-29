@@ -1,0 +1,102 @@
+/*Rock Paper Scissors*/
+.rps_body{
+    background:var(--main-color);
+    height:100vh;
+    margin:20px;
+    padding:0.5rem;
+    border-radius: 20px;
+    overflow: auto;
+
+}
+
+
+
+.score_board {
+       padding:10px;
+       margin:20px  auto;/*auto to horizontally center the elements;*/
+       border:2px solid white;
+       border-radius:5px;
+       text-align:center;
+       width:250px;
+       color:white;
+       position:relative;
+       font-size:45px;
+
+
+}
+
+.badge{
+    background-color:var(--secondary-color);
+    padding:6px 10px; /*2t,b 10r-l*/
+    font-size:15px;
+
+}
+
+
+#user_badge {
+    position:absolute;
+    top:22px;
+    left:-30px;
+}
+
+#computer_badge{
+    position:absolute;
+    top:22px;
+    right:-30px;
+
+}
+.result {
+	font-size: 30px;
+	color: white;
+	text-align:center;
+	font-weight:bold;
+
+
+}
+
+.computer_choice{
+    font-size: 20px;
+	color: white;
+	text-align:center;
+
+}
+.rps_choices{
+    text-align:center;
+}
+.rps_choice{
+
+
+    display: inline-block;
+    padding: 10px;
+	margin:0 15px;
+	background: white;
+	border: 4px solid white;
+	border-radius:50%;
+	transition: all 0.5s ease;
+}
+.rps_choice:hover{
+	cursor: pointer;
+    background: #c7deff;
+
+}
+
+#action_message {
+	text-align: center;
+	color: white;
+	font-size: 20px;
+
+
+}
+@media (max-width:600px){
+.rps_img{
+    width:100px;
+    height:auto;
+}
+}
+
+@media (max-width:370px){
+    .rps_img{
+        width:80px;
+        height:auto;
+    }
+    }

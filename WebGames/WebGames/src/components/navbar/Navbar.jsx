@@ -69,18 +69,16 @@ const Navbar = ({ isLoggedIn, logoutAction,userName }) => {
         ) : (
           <ul>
             <li>
-              <Link to="/welcome">Welcome</Link>
+              <Link onClick={closeMenu} to="/welcome">Welcome</Link>
             </li>
             
             <li>
-              <Link to="/signup">Signup</Link>
+              <Link onClick={closeMenu} to="/signup">Signup</Link>
             </li>
             <li>
-              <Link to="/login">Login</Link>
+              <Link onClick={closeMenu} to="/login">Login</Link>
             </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
+
           </ul>
         )}
       </div>
