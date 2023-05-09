@@ -7,51 +7,32 @@ export default function About (){
                 <div>
                     <h3>ABOUT US:</h3>
 
-                <p >This website is my final project for the Webdesign course . Where we explore the elements of front-end development (HTML, CSS, JavaScript and other useful tools like Adobe photoshop, illustrator, Bootstrap...).<br/>
-                 I chose this topic because creating these little webGames will give me the opportunity to dive more into advanced Javascript and Css while also having fun.<br/>
-                 The reason why Python (Flask) is used, is my intention to keep expanding this project beyond this course, and adding a database to save users data and have functional sign-up sign-in forms.</p>
+                <p >Welcome to WebGames, the ultimate destination for online gaming!
+<br /><br />
+Our website was founded with the goal of bringing fun and entertainment to people of all ages and backgrounds. We believe that games are not just a form of entertainment, but also a way to relax, de-stress, and connect with others.
+<br /><br />
+At WebGames, you can enjoy a wide variety of games, including classics like rock paper scissors, tic tac toe, and matching cards, as well as newer games like flappy bird and many more. You can play these games alone, or challenge your friends to a friendly match and see who comes out on top.
+<br /><br />
+We strive to provide the best gaming experience possible, which is why we've made our website easy to use and accessible from any device. Whether you're on your computer, tablet, or smartphone, you can play our games anytime, anywhere.
+<br /><br />
+At WebGames, we believe in fostering a community of gamers who share our passion for fun and competition. That's why we encourage you to join our community, connect with other gamers, and share your high scores and achievements.
+<br /><br />
+We're constantly updating our website with new games and features, so be sure to check back often for the latest and greatest in online gaming.
+<br /><br />
+</p>
                 </div>
 
 
                  <img width="400" height="auto" alt="" src={gaming}/>
 
 
-            </div>
-                    {/* <div className="bootstrap-container">
+</div>
+<div className='resources'>
 
-                    <div className="bootstrap">
-                        <div   div id="demo" className="carousel slide" data-ride="carousel">
-            
-                        <ul className="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" className="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-            
-            
-                        <div className="carousel-inner">
-                        <div className="carousel-item active">
-                        <img width="400" height="auto" alt="" src={gaming}/>
-                        </div>
-                        <div className="carousel-item">
-                        <img width="400" height="auto" alt="" src={gaming}/>
-                        </div>
-                        <div className="carousel-item">
-                        <img width="400" height="auto" alt="" src={gaming}/>
-                        </div>
-                        </div>
-            
-                        <a className="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span className="carousel-control-prev-icon"></span>
-                        </a>
-                        <a className="carousel-control-next" href="#demo" data-slide="next">
-                        <span className="carousel-control-next-icon"></span>
-                        </a>
-                        </div>
-            
-            
-                    </div>
-                    </div> */}
+</div>
+
+
+                   
                    </>
 
    

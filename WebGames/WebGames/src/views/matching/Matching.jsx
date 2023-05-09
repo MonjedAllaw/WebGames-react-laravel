@@ -89,8 +89,7 @@ export default function Matching(){
         let card1= cards[id_chosen[0]];
         let card2= cards[id_chosen[1]];
        
-        console.log(card1)
-        console.log(card2)
+
  
         if(card1.img == card2.img){
             nextCards[id_chosen[0]]= {name: 'white',

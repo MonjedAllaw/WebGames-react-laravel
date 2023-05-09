@@ -20,7 +20,7 @@ body{
 }
 
 /*home*/
-.home a{
+a{
     text-decoration: none;
     color: #252c6a;
 
@@ -36,10 +36,7 @@ body{
 
 }
 
-.about p{
-max-width:500px;
 
-}
 .about{
 color:white;
  background:var(--main-color);
@@ -48,6 +45,19 @@ color:white;
     justify-content:space-between;
     align-items:center;
     padding:0 10%;
+}
+.about p{
+    max-width:500px;
+    
+    }
+#welcome-message>p{
+    max-width:600px; 
+}
+
+.resources{
+    min-height: 300px;
+    background:var(--bg-color);
+        
 }
 #welcome-message h1{
 color:var(--darker-color);
@@ -88,7 +98,7 @@ color:var(--bg-color);
 
 
 }
-.page_choice:hover{
+.page_choice.active:hover{
  box-shadow: 0 0 15px var(--main-color);
  cursor:pointer;
 
