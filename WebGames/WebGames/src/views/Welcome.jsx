@@ -34,15 +34,15 @@ So what are you waiting for? Sign up or log in now and start playing our amazing
 <div className="choices">
     <div className="page_choice active">
       <img width="auto" height={90} alt="" src={xo} />
-      <Link onClick={screentop}  to="/signup"> Tic-Tac-Toe</Link>
+      <Link onClick={screentop}  to="/login"> Tic-Tac-Toe</Link>
     </div>
     <div className="page_choice active">
       <img width="auto" height={90} alt="" src={quesitonMark} />
-      <Link onClick={screentop}  to="/signup"> Matching Game</Link>
+      <Link onClick={screentop}  to="/login"> Matching Game</Link>
     </div>
     <div className="page_choice active">
       <img width="auto" height={90} alt="" src={rps} />
-      <Link onClick={screentop}  to="/signup"> Rock Paper Scissors</Link>
+      <Link onClick={screentop}  to="/login"> Rock Paper Scissors</Link>
     </div>
     <div className="page_choice ">
       <img width="auto" height={90} alt="" src={monopoly} />
